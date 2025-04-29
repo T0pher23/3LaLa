@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.145.0">
+    <title>Cover Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+
+</head>
+
+<body class="box-bground d-flex h-100 text-center text-bg-dark">
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div class="navloc">
+                <img class="float-md-start mb-0" height="150" src="../DisneyLogo.png">
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold h2 py-1 px-0 active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link fw-bold h2 py-1 px-0" href="#">Features</a>
+                    <a class="nav-link fw-bold h2 py-1 px-0" href="#"><i class="bi bi-bookmark"></i>MyList </a>
+                    <div class="form-control input-group" style="border-radius: 50px;">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                style="margin-bottom: 5px; margin-left: 8px" fill="currentColor" class="bi bi-search"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </span>
+                        <input type="search" class="form-control " placeholder="Find me a Disney Movie"
+                            aria-label="Search" aria-describedby="search-addon" />
+
+                    </div>
+
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                            style="margin-top: 41px; padding-left: 10px;" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </span>
+
+
+                </nav>
+            </div>
+        </header>
+
+
+
+        <div class="profile-container container my-4 p-4">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="path-to-profile-image.jpg" alt="Profile Picture" class="img-fluid rounded-circle"
+                        style="width: 100px; height: 100px;">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="fw-bold text-white">DisneyFan123</h2>
+                    <p class="text-white-50 mb-1">Member since: <strong>January 2024</strong></p>
+                    <p class="text-white-50 mb-1">Reviews: <strong>143</strong></p>
+                    <p class="text-white-50">"Disney enthusiast and animation lover. I've been watching Disney movies
+                        since childhood and love sharing my thoughts!"</p>
+                </div>
+                <div class="col-md-3 text-end">
+                    <button class="btn btn-warning me-2">Edit Profile</button>
+                    <button class="btn btn-danger"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <!-- Left-aligned Tabs -->
+                <div class="d-flex gap-3">
+                    <a href="file:///C:/Users/t.ph/Desktop/New%20folder/cover/FMADM.html" class="btn btn-tab rounded-pill px-4">My Reviews</a>
+                    <button class="btn btn-tab active rounded-pill px-4">Settings</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <button class="list-group-item list-group-item-action active">Profile Information</button>
+                        <button class="list-group-item list-group-item-action">Display Preferences</button>
+                        <button class="list-group-item list-group-item-action">Notification Settings</button>
+                        <button class="list-group-item list-group-item-action">Privacy Settings</button>
+                        <button class="list-group-item list-group-item-action">Account Security</button>
+                    </div>
+                    <button class="btn btn-danger mt-4 w-100">Delete Account</button>
+                </div>
+
+                <!-- Profile Information Form -->
+                <div class="col-md-9">
+                    <div class="card p-4">
+                        <h3 class="mb-4">Profile Information</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" value="DisneyFan_12345">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" value="user@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="display-name" class="form-label">Display Name</label>
+                                <input type="text" class="form-control" id="display-name" value="DisneyFan123">
+                            </div>
+                            <div class="mb-3">
+                                <label for="bio" class="form-label">Bio</label>
+                                <textarea class="form-control" id="bio"
+                                    rows="3">Disney enthusiast and animation lover. I’ve been watching Disney movies since childhood and love sharing my thoughts!</textarea>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-warning">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="mt-auto text-white-50">
+            <p>@2025, All Right Resevered.</p>
+        </footer>
+    </div>
+
+    <script defer src="../assets/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"></script>
+</body>
+
+</html>
